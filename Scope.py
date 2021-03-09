@@ -17,11 +17,15 @@ class Difference:
 
 # End of Difference class
 
-
+# Sample Input
+# 3
+# 1 2 5
+# Output
+# 4 (max difference between input numbers)
 _ = input()
 a = [int(e) for e in input().split(' ')]
 
 d = Difference(a)
 d.computeDifference()
 
-print(d.maximumDifference)
+print(d.maximumDifference)  # doesn't work correctly
