@@ -1,27 +1,19 @@
 class Difference:
     def __init__(self, a):
         self.__elements = a
-        self.maximumDifference
+
     # Add your code here
     def computeDifference(self):
         maxDiff = 0
-        for i in range(len(self.__elements)-1):
-            for j in range(i+1, len(self.__elements)):
-                dif = self.__elements[i] - self.__elements[j]
+        for i in range(len(a)-1):
+            for j in range(i+1, len(a)):
+                dif = abs(a[i] - a[j])
                 if maxDiff <= dif:
                     maxDiff = dif
-        self.maximumDifference = maxDiff
-
-    def maximumDifference(self):
-        return self.maximumDifference
+        Difference.maximumDifference = maxDiff
 
 # End of Difference class
 
-# Sample Input
-# 3
-# 1 2 5
-# Output
-# 4 (max difference between input numbers)
 _ = input()
 a = [int(e) for e in input().split(' ')]
 
